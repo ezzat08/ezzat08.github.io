@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="refresh" content="3">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<title>My Personal Page</title>
+	<style type="text/css">
+		
+		.parent {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			grid-template-rows: 2fr;
+			grid-column-gap: 0px;
+			grid-row-gap: 0px;
+		}
+
+		.div1 { 
+			grid-area: 1 / 1 / 3 / 2;
+			text-align: center;
+		}
+		.div2 { 
+			grid-area: 1 / 2 / 2 / 6; 
+		}
+		.div3 { 
+			grid-area: 2 / 2 / 3 / 6; 
+		}
+
+		.logo{
+			width: 100px;
+		}
+
+		a{
+			text-decoration: none;
+			color: black;
+		}
+
+		.dp{
+			border-radius: 50%;
+			width: 200px;
+			height: 200px;
+		}
+
+		.selected-course:target{
+			background-color: #0fa4af;
+			transition: background-color 0.5s ease;
+		}
+
+		.footer{
+		   left: 0;
+		   bottom: 0;
+		   width: 100%;
+		   color: black;
+		   text-align: center;
+		   background-color: #0fa4af;
+		}
+		body{
+			background-color: #affde5;
+			font-family: Poppins;
+		}
+
+		.timetable{
+			border: 2px solid black;
+			border-collapse: collapse;
+		}
+
+		.timetable td{
+			border: 2px solid black;
+			border-collapse: collapse;
+		}
+		.header{
+			background-color: #0fa4af;
+		}
+	</style>
+</head>
+<body>
+	<!-- Header div --> 
+	<div style="border: 1px solid black;" class="header">
+		<div class="parent">
+		<div class="div1" >  <a href="index.html"> <img src="img/logo.png" class="logo"> </a> </div>
+		<div class="div2" style="text-align:right"><p><a href="https://www.instagram.com/aezytn/" target="_blank"><img src="img/ig.png" width="35px"></a>
+			<a href="https://www.youtube.com/@ahmadezzat5117" target="_blank"><img src="img/youtube.jpg" width="38px"></a>
+		 </p></div>
+		<div class="div3">
+			<table width="100%">
+				<tr>
+					<td><a href="bio.html">Biography</a></td>
+					<td><a href="timetable.html">Timetable</a></td>
+					<td><a href="galleries.html">Galleries</a></td>
+					<td><a href="download.html">Download</a></td>
+					<td><a href="link.html">Links</a></td>
+					<td><a href="signin.html">Sign-in</a></td>
+					<td><a href="signout.html">Sign-out</a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	</div>
+	
+	<!-- Content div -->
+	<div class="content" style="text-align: center; align-items: center;" id="content">
+		<br><br>
+		<div style="width: 50%; margin: 0 auto;">
+		<table class="timetable">
+			<tr>
+				<td><b>DAY / TIME</b></td>
+				<td><b>08:00 AM</b></td>
+				<td><b>09:00 AM</b></td>
+				<td><b>10:00 AM</b></td>
+				<td><b>11:00 AM</b></td>
+				<td><b>12:00 PM</b></td>
+				<td><b>13:00 PM</b></td>
+				<td><b>14:00 PM</b></td>
+				<td><b>15:00 PM</b></td>
+				<td><b>16:00 PM</b></td>
+				<td><b>17:00 PM</b></td>
+			</tr>
+			<tr>
+				<td><b>MONDAY</b></td>
+				<td colspan="2"><a href="#csc577">CSC577</a></td>
+				<td colspan="4"></td>
+				<td colspan="2" class="c1"><a href="#csc508">CSC508</a></td>
+				<td colspan="2"></td>
+			</tr>
+			<tr>
+				<td><b>TUESDAY</b></td>
+				<td></td>
+				<td colspan="2"><a href="#csc574">CSC574</a></td>
+				<td colspan="2"><a href="#csc584">CSC584</a></td>
+				<td></td>
+				<td colspan="2"><a href="#csc569">CSC569</a></td>
+				<td colspan="2"></td>
+			</tr>
+			<tr>
+				<td><b>WEDNESDAY</b></td>
+				<td></td>
+				<td colspan="2"><a href="#csc577">CSC577</a></td>
+				<td colspan="2"><a href="#csc574">CSC574</a></td>
+				<td colspan="5"></td>
+			</tr>
+			<tr>
+				<td><b>THURSDAY</b></td>
+				<td></td>
+				<td colspan="2"><a href="#csc584">CSC584</a></td>
+				<td colspan="3"></td>
+				<td colspan="2"><a href="#csc508" class="c1">CSC508</a></td>
+				<td colspan="2"></td>
+			</tr>
+			<tr>
+				<td><b>FRIDAY</b></td>
+				<td colspan="2"></td>
+				<td colspan="2"><a href="#csc569">CSC569</a></td>
+				<td colspan="3"></td>
+				<td colspan="2"><a href="#lcc500">LCC500</a></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+		<br><br>
+
+		<p id="csc508" class="selected-course"><b>DATA STRUCTURES</b>
+		<br>
+		SURAYA BINTI MASROM
+		<br><br>
+
+		<p id="csc569" class="selected-course"><b>PRINCIPLES OF COMPILER</b>
+		<br>
+		NURKHAIRIZAN BINTI KHAIRUDIN
+		<br><br>
+
+		<p id="csc574" class="selected-course"><b >DYNAMIC WEB APPLICATION DEVELOPMENT</b>
+		<br>
+		SITI ROZANAE BT ISMAIL
+		<br><br></p>
+
+		<p id="csc577" class="selected-course"><b>SOFTWARE ENGINEERING: THEORIES AND PRINCIPLES</b>
+		<br>
+		AHMAD FARID BIN NAJMUDDIN
+		<br><br></p>
+
+		<p id="csc584" class="selected-course"><b>ENTERPRISE PROGRAMMING</b>
+		<br>
+		MASURAH BINTI MOHAMAD
+		<br><br></p>
+
+		<p id="lcc500" class="selected-course"><b>ENGLISH FOR WORKPLACE COMMUNICATION</b>
+		<br>
+		MOHAMAD SAFWAT ASHAHRI BIN MOHD SALIM
+		<br><br></p>
+	</div>
+	<!-- Footer div -->
+	<div class="footer" ><a href="#content">Disclamer & Copyright</a></div>
+</body>
+</html>
